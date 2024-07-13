@@ -1,201 +1,206 @@
-
 /* Nav styles */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-*{
+* {
     font-family: "Open sans";
 
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 50px 160px 136px 160px;
     background-color: #FFF8F3;
-    
+
 }
 
-.nav-title{
+.nav-title {
     font-weight: 800;
     font-size: 32px;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     margin-right: 20px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     font-size: 16px;
 
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #FD6E0A;
     font-weight: bold;
     color: white;
-    padding: 14px 25px ;
+    padding: 14px 25px;
     border: none;
     border-radius: 5px;
 }
 
-.btn-contact{
+.btn-contact {
     background-color: white;
     border: 2px solid #FD6E0A;
     color: #FD6E0A;
 }
 
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
 }
 
-.dark-2{
+.dark-2 {
     color: #474747;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
 /* Header */
-.header{
+.header {
     background-image: url('/images/developer.png'), url('/images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
-    object-fit: fill; 
+    object-fit: fill;
     margin-bottom: 130px;
     background-color: #FFF8F3;
 }
 
 /* Banner style */
-.banner{
+.banner {
     display: flex;
     justify-content: space-between;
     margin: 0 28px 0 160px;
 }
-.banner-content{
+
+.banner-content {
     width: 380px;
 }
-.banner-greetings{
+
+.banner-greetings {
     font-size: 26px;
 }
 
-.banner-title{
+.banner-title {
     font-weight: bold;
     font-size: 54px;
 }
 
-.banner-description{
+.banner-description {
     font-size: 16px;
 }
-.banner-image{
+
+.banner-image {
     width: 500px;
 }
 
-.section-title{
+.section-title {
     font-size: 30px;
     font-weight: bold;
     color: black;
 }
 
-.section-description{
+.section-description {
     font-size: 15px;
     color: #757575;
 }
 
 /* main styles */
-main{
+main {
     max-width: 1140px;
     margin: 0 auto;
 
 }
 
-main section{
+main section {
     margin-top: 130px;
     margin-bottom: 120px;
 }
 
 /* about */
-.about{
+.about {
     background-color: #FFF8F3;
     border-radius: 10px;
     padding: 120px 150px;
     text-align: center;
 }
-.border{
+
+.border {
     border: 1px solid;
     background-color: white;
-    
+
 }
 
-.item-description{
+.item-description {
     font-weight: 600;
 }
 
-.about-items{
+.about-items {
     display: flex;
     justify-content: space-around;
 }
 
-.skills-container{
+.skills-container {
     display: flex;
     gap: 24px;
     margin-top: 60px;
 }
 
-.skill{
+.skill {
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.07);
 }
 
-.resume-container{
+.resume-container {
     display: flex;
     gap: 24px;
 }
 
-.experience-sub-title{
+.experience-sub-title {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
-.experience-descroption, .experience-sub-title{
+.experience-descroption,
+.experience-sub-title {
     color: #757575;
 }
 
-.resume hr{
+.resume hr {
     margin: 30px 4px;
 }
 
-.resume-download-cv{
+.resume-download-cv {
     margin-top: 45px;
 }
 
-.resume-title{
+.resume-title {
     font-size: 23px;
     margin-bottom: 45px;
 }
 
 /* footer styles */
 
-footer{
+footer {
     background-color: #FFF8F3;
     padding: 130px 230px;
     display: flex;
     gap: 110px;
 }
 
-.footer-column{
+.footer-column {
     width: 50%;
 }
 
-footer input[type="text"], footer input[type="email"]
-{
+footer input[type="text"],
+footer input[type="email"] {
     height: 64px;
     border-radius: 5px;
     background-color: white;
@@ -206,7 +211,8 @@ footer input[type="text"], footer input[type="email"]
     border: none;
     font-size: 16px;
 }
-footer textarea{
+
+footer textarea {
     height: 64px;
     border-radius: 5px;
     background-color: white;
@@ -220,27 +226,59 @@ footer textarea{
 
 
 /* Responsive media query */
-.hide{
+.hide {
     display: none;
 }
 
 @media screen and (max-width: 576px) {
-    .skills-container, .resume-container, footer, .about-items{
+
+    .skills-container,
+    .resume-container,
+    footer,
+    .about-items,
+    .banner,
+    nav 
+    {
         flex-direction: column;
     }
+    .banner{
+        margin: 20px ;
+    }
+    .header
+    {
+        background-image: none;
+    }
 
-    footer , .about{
+    footer,
+    .about {
         padding: 20px;
     }
 
-    .footer-column{
+    .footer-column {
         width: 100%;
     }
-    footer input[type="text"], footer input[type="email"],footer textarea{
-        width: calc( 100% - 40px );
+
+    footer input[type="text"],
+    footer input[type="email"],
+    footer textarea {
+        width: calc(100% - 40px);
     }
-    .border{
+
+    .border {
         padding: 0px 20px;
     }
-    
+
+    .banner-image{
+        width: 100%;
+    }
+
+    nav{
+        margin: 5px 16px 0px 16px;
+        justify-content: left;
+        align-items: flex-start;
+    }
+    nav ul{
+        padding: 0;
+    }
+
 }
